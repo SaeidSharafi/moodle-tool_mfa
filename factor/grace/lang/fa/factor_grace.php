@@ -27,8 +27,8 @@ $string['pluginname'] = 'Grace period';
 $string['info'] = 'Allows login without other factor for a specified period of time.';
 $string['settings:graceperiod'] = 'Grace period';
 $string['settings:graceperiod_help'] = 'Period of time when users can access Moodle without configured and enabled factors';
-$string['setupfactors'] = 'در حال حاضر شناسایی دو عاملی در پروفایل شما فعال نشده است. لطفا به آدرس {$a->url} بروید و آن را فعال کنید.
-    در صورتی که تا {$a->time} دیگر شناسایی دو عاملی را فعال نکنید ممکن است دیگر نتوانید وارد سایت شود.';
+$string['setupfactors'] = 'در حال حاضر شناسایی دو عاملی در پروفایل شما فعال نشده است. لطفا بر روی {$a->url} کلیک کنید و آن را فعال نمایید.
+    در صورتی که تا {$a->time} دیگر شناسایی دو عاملی را فعال نکنید ممکن است دیگر نتوانید وارد سایت شوید.';
 $string['preferences'] = 'ترجیحات کاربر';
 $string['summarycondition'] = 'is within grace period';
 $string['revokeexpiredfactors'] = 'Revoke expired gracemode factors';
