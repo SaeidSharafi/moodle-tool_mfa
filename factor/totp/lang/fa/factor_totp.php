@@ -40,13 +40,13 @@ $string['info'] = '<p>جهت دانلود اپلیکیشن شناسایی دو �
 <p><a href="https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8" target="_blank">iPhone</a> یا <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2" target="_blank">Android</a></p>';
 $string['loginsubmit'] = 'کد تایید';
 $string['loginskip'] = 'به دستگاه دسترسی ندارم';
-$string['pluginname'] = 'اپلیکیشن احراز هویت';
+$string['pluginname'] = 'تایید هویت دو عاملی';
 $string['privacy:metadata'] = 'این پلاگین هیچ داده شخصی را نگهداری نمی‌کند';
 $string['settings:secretlength'] = 'طول کلید مخفی TOTP';
 $string['settings:secretlength_help'] = 'طول رشته کلید مخفی TOTP ایجاد شده ';
 $string['settings:totplink'] = 'نمایش لینک فعال سازی با اپلیکیشن موبایل';
 $string['settings:totplink_help'] = 'If enabled the user will see a 3rd setup option with a direct otpauth:// link';
-$string['settings:window'] = 'TOTP پنجره تایید';
+$string['settings:window'] = 'پنجره تایید TOTP';
 $string['settings:window_help'] = 'How long each code is valid for. You can set this to a higher value as a workaround if your users device clocks are often slightly wrong.
     Rounded down to the nearest 30 seconds, which is the time between new generated codes.';
 $string['setupfactor'] = 'تنظیم شناسایی دو عاملی';

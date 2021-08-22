@@ -44,9 +44,9 @@ $string['error:notenoughfactors'] = 'انجام شناسایی غیرممکن م
 $string['error:reauth'] = 'ما نتوانستیم هویت شما را به اندازه ای تایید کنیم که با خط مشی امنیتی احراز هویت سایت مطابقت داشته باشد.<br>
  این ممکن است به دلیل:
 <br> ۱) مراحل قفل شده‌اند - لطفا چند دقیقه صبر کنید و دوباره امتحان کنید.
-<br> ۲) انجام مراحل شکست خورده‌ است - لطفا در مرحله جزییا را دوباره بررسی نمایید.
+<br> ۲) انجام مراحل شکست خورده‌ است - لطفا در هر مرحله جزییات را دوباره بررسی نمایید.
 <br> ۳) برخی مراحل لغو شده اند - لطفا این صفحه را مجددا بارگیری کنید و یا دوباره وارد سیستم شوید.';
-$string['error:support'] = 'اگر هنوز قادر به ورود به سیستم نیستید یا فکر می‌:نید این را به اشتباه مشاهده می‌کنید، لطفا برای پشتیبانی به آدرس زیر ایمیل ارسال کنید:';
+$string['error:support'] = 'اگر هنوز قادر به ورود به سیستم نیستید یا فکر می‌کنید این پیام را به اشتباه مشاهده می‌کنید، لطفا برای پشتیبانی به آدرس زیر ایمیل ارسال کنید:';
 $string['error:home'] = 'برای بازگشت کلیک کنید';
 $string['error:factornotenabled'] = 'عامل شناسایی \'{$a}\' فعال نیست';
 $string['email:subject'] = 'ورد به {$a} امکان ندارد';
@@ -75,8 +75,8 @@ $string['nonauthusers'] = 'MFA در انتظار';
 $string['overall'] = 'به طور کلی';
 $string['pluginname'] = 'Multi-factor authentication';
 $string['preferences:header'] = 'تنظیمات شناسایی دو عاملی';
-$string['preferences:availablefactors'] = 'Available factors';
-$string['preferences:activefactors'] = 'Active factors';
+$string['preferences:availablefactors'] = 'عوامل شناسایی در دسترس';
+$string['preferences:activefactors'] = 'عوامل شناسایی فعال';
 $string['privacy:metadata:tool_mfa'] = 'Data with configured MFA factors';
 $string['privacy:metadata:tool_mfa:id'] = 'Record ID';
 $string['privacy:metadata:tool_mfa:userid'] = 'The ID of the user that factor belongs to';
@@ -96,9 +96,9 @@ $string['privacy:metadata:tool_mfa_auth'] =
         'This database table stores the last time a successful MFA auth was registered for a user id.';
 $string['privacy:metadata:tool_mfa_auth:userid'] = 'The user this timestamp is associated with.';
 $string['privacy:metadata:tool_mfa_auth:lastverified'] = 'Time user was last authenticated with';
-$string['revoke'] = 'Revoke';
-$string['revokefactor'] = 'Revoke factor';
-$string['settings:enabled'] = 'MFA plugin enabled';
+$string['revoke'] = 'ابطال';
+$string['revokefactor'] = 'ابطال عامل';
+$string['settings:enabled'] = 'فعالسازی پلاگین MFA';
 $string['settings:enabled_help'] = '';
 $string['settings:combinations'] = 'Summary of good conditions for login';
 $string['settings:general'] = 'General MFA settings';
@@ -107,7 +107,7 @@ $string['settings:debugmode_help'] = 'Debug mode will display a small notificati
          with information on the currently enabled factors.';
 $string['settings:duration'] = 'Secret validity duration';
 $string['settings:duration_help'] = 'The duration that generated secrets are valid.';
-$string['settings:enablefactor'] = 'Enable factor';
+$string['settings:enablefactor'] = 'فعال سازی عامل';
 $string['settings:enablefactor_help'] = 'Check this control to allow the factor to be used for MFA authentication.';
 $string['settings:lockout'] = 'Lockout threshold';
 $string['settings:lockout_help'] =
@@ -115,10 +115,10 @@ $string['settings:lockout_help'] =
 $string['settings:redir_exclusions'] = 'Urls which should not redirect the MFA check';
 $string['settings:redir_exclusions_help'] =
         'Each new line is a relative URL from the siteroot for which the MFA check will not redirect from eg. /admin/tool/securityquestions/set_responses.php';
-$string['settings:weight'] = 'Factor weight';
+$string['settings:weight'] = 'وزن عامل';
 $string['settings:weight_help'] = 'The weight of this factor if passed. A user needs at least 100 points to login.';
 $string['setup'] = 'Setup';
-$string['setuprequired'] = 'User setup';
+$string['setuprequired'] = 'نیاز به تنظیم کاربر';
 $string['setupfactor'] = 'Setup factor';
 $string['state:pass'] = 'Pass';
 $string['state:fail'] = 'Fail';
@@ -129,7 +129,7 @@ $string['totalweight'] = 'Total weight';
 $string['weight'] = 'Weight';
 $string['mfareports'] = 'MFA reports';
 $string['factorreport'] = 'All factor report';
-$string['lockoutnotification'] = 'You have {$a} verification attempts remaining for this factor.';
+$string['lockoutnotification'] = '{$a} تلاش دیگر جهت تایید هویت باقی مانده است.';
 $string['mfa:mfaaccess'] = 'Interact with MFA';
 $string['factorsetup'] = 'Factor \'{$a}\' successfully setup.';
 $string['factorrevoked'] = 'Factor \'{$a}\' successfully revoked.';
@@ -144,22 +144,22 @@ $string['pending'] = 'Pending';
 $string['performbulk'] = 'Bulk action';
 $string['redirecterrordetected'] =
         'Unsupported redirect detected, script execution terminated. Redirection error occured between MFA and {$a}.';
-$string['resetfactor'] = 'Reset user authentication factors';
+$string['resetfactor'] = 'بازنشانی عوامل شناسایی کاربران';
 $string['resetfactorconfirm'] = 'Are you sure you wish to reset this factor for {$a}?';
-$string['resetuser'] = 'User:';
+$string['resetuser'] = 'کاربر:';
 $string['resetsuccess'] = 'Factor \'{$a->factor}\' successfully reset for user \'{$a->username}\'.';
 $string['resetsuccessbulk'] = 'Factor \'{$a}\' successfully reset for provided users.';
-$string['selectfactor'] = 'Select factor to reset:';
-$string['resetfactorplaceholder'] = 'Username or email';
-$string['userempty'] = 'User cannot be empty.';
-$string['resetconfirm'] = 'Reset user factor';
-$string['usernotfound'] = 'Unable to locate user.';
+$string['selectfactor'] = 'انتخاب عامل:';
+$string['resetfactorplaceholder'] = 'نام کاربری یا ایمیل';
+$string['userempty'] = 'کاربر نمی‌تواند خالی باشد.';
+$string['resetconfirm'] = 'بازنشانی عامل شناسایی کاربر';
+$string['usernotfound'] = 'کاربر یافت نشد.';
 $string['totalusers'] = 'Total users';
 $string['usersauthedinperiod'] = 'Logged in';
 $string['lookbackperiod'] = 'Showing MFA information from {$a} onwards.';
 $string['alltime'] = 'All time';
 $string['selectperiod'] = 'Select a lookback period for the report:';
 $string['userlogs'] = 'User logs';
-$string['verificationcode'] = 'جهت تایید کد تایید را وارد نمایید.';
+$string['verificationcode'] = 'جهت ورود کد تایید را وارد نمایید.';
 $string['verificationcode_help'] = 'The verification code provided by the current authentication factor.';
 $string['viewlockedusers'] = 'View locked users';
